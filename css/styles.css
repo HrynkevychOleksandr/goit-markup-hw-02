@@ -1,0 +1,149 @@
+:root{
+    --primery-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-text-color: #2E2F42;
+    --accent-text-color-hover: blue;
+    --accent-text-color-current: blue;
+    --primery-white-color: #FFFFFF;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    background-color: var(--primery-white-color);
+    color: var(--primery-text-color);
+}
+/* Заголовки font-weight: 700 */
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+/* прибирання маркерів у списках */
+ul {list-style: none;}
+/* header */
+/* прибирання підкреслення */
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+/* logo */
+.logo {
+    font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+/* Уточнити які зміни мають бути в hover та focus Додано самостійно  font-size: 20px  */
+.logo:hover, .logo:focus {
+        font-size: 20px;
+}
+.logo-iris {
+    color: #4D5AE5;
+}
+.logo-navyblue {
+    color: var(--accent-text-color);
+}
+/* site-nav */
+.site-nav, .cont-nav {
+        font-size: 16px;
+        line-height: 1.5;
+}
+.site-nav {
+        font-weight: 700;
+}
+.site-nav .link {color: var(--accent-text-color);}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-text-color-hover);
+}
+.site-nav .link.current {
+    color: var(--accent-text-color-current);
+}
+/* cont-nav */
+/* Уточнити які зміни мають бути в hover та focus Додано самостійно  font-weight: 700  */
+.cont-nav .link:hover, .cont-nav .link:focus {
+    font-weight: 700;
+        color: var(--accent-text-color-hover);
+}
+/* hero */
+.hero {background-color: var(--accent-text-color);}
+.hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+    color: var(--primery-white-color);
+}
+.hero-button:hover, .hero-button:focus {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.19;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: var(--primery-white-color);
+        background-color: #4D5AE5;
+}
+/* section */
+/* Приховування заголовка "Секція1" та "Portfolio" */
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.section1-title {
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+.section3-title {
+    font-size: 20px;
+    line-height: 1.2;
+    /* text-align: center; - поставити в центрі блоку */
+}
+/* Portfolio */
+/* Блок фільтрів */
+.portfolio-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    background: #F4F4FD;
+}
+.portfolio-button:hover, .portfolio-button:focus {
+        color: #FFFFFF;
+        background: #4D5AE5;
+}
+/* Блок портфоліо */
+.section4-title {
+    font-size: 20px;
+        line-height: 1.2;
+        color: var(--title-text-color);
+}
+/* footer */
+footer {
+    background-color: var(--accent-text-color);
+}
+.logo-cloud {
+    color: #F4F4FD;
+}
+.footer {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #E7E9FC;
+}
