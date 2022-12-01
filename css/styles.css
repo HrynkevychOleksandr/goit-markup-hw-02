@@ -1,20 +1,21 @@
 :root{
-    --primery-text-color: #434455;
-    --title-text-color: #2E2F42;
-    --accent-text-color: #2E2F42;
-    --accent-text-color-hover: blue;
-    --accent-text-color-current: blue;
+    --primery-text-color-slate: #434455;
     --primery-white-color: #FFFFFF;
+    --text-color-iris: #4D5AE5;
+    --text-color-navyblue: #2E2F42;
+    --text-color-cloud: #F4F4FD;
+    --text-color-cornflower: #E7E9FC;
 }
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
     background-color: var(--primery-white-color);
-    color: var(--primery-text-color);
+    color: var(--primery-text-color-slate);
 }
 /* Заголовки font-weight: 700 */
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-weight: 700;
+    color: var(--text-color-navyblue);
 }
 /* прибирання маркерів у списках */
 ul {list-style: none;}
@@ -37,15 +38,11 @@ button {
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
-/* Уточнити які зміни мають бути в hover та focus Додано самостійно  font-size: 20px  */
-.logo:hover, .logo:focus {
-        font-size: 20px;
-}
 .logo-iris {
-    color: #4D5AE5;
+    color: var(--text-color-iris);
 }
 .logo-navyblue {
-    color: var(--accent-text-color);
+    color: var(--text-color-navyblue);
 }
 /* site-nav */
 .site-nav, .cont-nav {
@@ -55,28 +52,28 @@ button {
 .site-nav {
         font-weight: 700;
 }
-.site-nav .link {color: var(--accent-text-color);}
+.site-nav .link {color: var(--text-color-navyblue);}
 .site-nav .link:hover, .site-nav .link:focus {
-    color: var(--accent-text-color-hover);
+    color: var(--primery-text-color-slate);
 }
 .site-nav .link.current {
-    color: var(--accent-text-color-current);
+    color: var(--text-color-iris);
 }
 /* cont-nav */
-/* Уточнити які зміни мають бути в hover та focus Додано самостійно  font-weight: 700  */
+.cont-nav .link {
+    color: var(--primery-text-color-slate);}
 .cont-nav .link:hover, .cont-nav .link:focus {
-    font-weight: 700;
-        color: var(--accent-text-color-hover);
+        color: var(--text-color-iris);
 }
 /* hero */
-.hero {background-color: var(--accent-text-color);}
+.hero {background-color: var(--text-color-navyblue);}
 .hero-title {
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
     color: var(--primery-white-color);
 }
-.hero-button:hover, .hero-button:focus {
+.hero-button, .hero-button:hover, .hero-button:focus {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.19;
@@ -84,13 +81,19 @@ button {
         align-items: center;
         letter-spacing: 0.04em;
         color: var(--primery-white-color);
-        background-color: #4D5AE5;
+        background-color: var(--text-color-iris);
 }
 /* section */
 /* Приховування заголовка "Секція1" та "Portfolio" */
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 section p {
     font-size: 16px;
@@ -99,7 +102,6 @@ section p {
 .section1-title {
     font-size: 20px;
     line-height: 1.2;
-    color: var(--title-text-color);
 }
 .section-title {
     font-size: 36px;
@@ -115,6 +117,7 @@ section p {
 /* Portfolio */
 /* Блок фільтрів */
 .portfolio-button {
+        font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -122,28 +125,28 @@ section p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background: #F4F4FD;
+    color: var(--text-color-iris);
+    background: var(--text-color-cloud);
 }
 .portfolio-button:hover, .portfolio-button:focus {
-        color: #FFFFFF;
-        background: #4D5AE5;
+        color: var(--primery-white-color);
+        background: var(--text-color-iris);
 }
 /* Блок портфоліо */
 .section4-title {
     font-size: 20px;
         line-height: 1.2;
-        color: var(--title-text-color);
+        color: var(--text-color-navyblue);
 }
 /* footer */
 footer {
-    background-color: var(--accent-text-color);
+    background-color: var(--text-color-navyblue);
 }
 .logo-cloud {
-    color: #F4F4FD;
+    color: var(--text-color-cloud);
 }
 .footer {
         font-size: 16px;
         line-height: 1.5;
-        color: #E7E9FC;
+        color: var(--text-color-cornflower);
 }
